@@ -1,0 +1,21 @@
+{
+  "name": "flipscan",
+  "version": "0.1.0",
+  "description": "Thrift store resale intelligence platform - scan items and get instant market value",
+  "private": true,
+  "workspaces": [
+    "mobile",
+    "backend",
+    "scrapers"
+  ],
+  "scripts": {
+    "install-all": "yarn install && yarn workspaces run install",
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=3.0.0"
+  }
+}
